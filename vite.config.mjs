@@ -14,7 +14,7 @@ export default defineConfig({
     outDir: resolve("./static"),
     rollupOptions: {
       input: {
-        index: resolve("./assets/js/index.ts"),
+        index: resolve("./assets/js/index.js"),
       },
       output: {
         entryFileNames: "js/[name].js",
