@@ -1,0 +1,15 @@
+@import "tailwindcss";
+@import "./tailwind_theme.css";
+
+/* @plugin "daisyui"; */
+@plugin "daisyui" {
+    themes: false;
+};
+
+
+@custom-variant dark (&:where(.dark, .dark *));
+@custom-variant theme-dark (&:where([data-theme=dark], [data-theme=dark] *));
+@custom-variant theme-light (&:where([data-theme=light], [data-theme=light] *));
+@custom-variant theme-auto (&:where([data-theme=auto], [data-theme=auto] *));
+
+
